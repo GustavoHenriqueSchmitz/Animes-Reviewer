@@ -20,6 +20,6 @@
     border: 1px solid black;
     place-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 55% 30%;
+    grid-template-rows: 15% 60% 25%;
     flex: 1;
 }

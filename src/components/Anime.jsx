@@ -4,7 +4,7 @@ function Anime() {
     return (
         <>
             <h1>Nome do anime</h1>
-            <img href="" alt="Imagem ilustrando o anime ou manga."/>
+            <img src="https://media.kitsu.io/anime/poster_images/1/original.jpg" alt="Imagem ilustrando o anime ou manga."/>
             <button><p>Próximo Anime</p></button>
         </>
     )
