@@ -1,9 +1,14 @@
 import './App.css';
+import { Anime } from './components/Anime';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <>
+      <section id="left-side"></section>
+      <section id="right-side">
+        <Anime/>
+      </section>
+    </>
   );
 }
 

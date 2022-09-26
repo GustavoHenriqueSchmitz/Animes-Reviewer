@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#base-div {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#left-side {
+    flex: 1;
+}
+
+#right-side {
+    display: grid;
+    border: 1px solid black;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 55% 30%;
+    flex: 1;
+}
