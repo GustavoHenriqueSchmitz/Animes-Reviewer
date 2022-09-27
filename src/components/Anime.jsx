@@ -1,11 +1,11 @@
-import './Anime.module.css'
+import style from './css/Anime.module.css'
 
 function Anime() {
     return (
         <>
-            <h1>Nome do anime</h1>
-            <img src="https://media.kitsu.io/anime/poster_images/1/original.jpg" alt="Imagem ilustrando o anime ou manga."/>
-            <button><p>Próximo Anime</p></button>
+            <h1 id={style.animeName}>Nome do anime</h1>
+            <img id={style.animeImage} src="https://media.kitsu.io/anime/poster_images/1/original.jpg" alt="Imagem ilustrando o anime ou manga."/>
+            <button id={style.animeButton}><p className={style.texts}>Próximo Anime</p></button>
         </>
     )
 }

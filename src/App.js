@@ -1,13 +1,22 @@
 import './App.css';
 import { Anime } from './components/Anime';
+import { AnimeDescription } from './components/Description';
+import { AnimeEvaluation } from './components/Evaluation';
 
 function App() {
   return (
     <>
-      <section id="left-side"></section>
-      <section id="right-side">
+      <div id="left-side">
+        <section id="section-description">
+          <AnimeDescription/>
+        </section>
+        <section id="section-evaluation">
+          <AnimeEvaluation/>
+        </section>
+      </div>
+      <div id="right-side">
         <Anime/>
-      </section>
+      </div>
     </>
   );
 }

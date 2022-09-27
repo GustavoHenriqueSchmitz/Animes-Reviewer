@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#evaluation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#evaluationInput {
+    grid-column: 2;
+}
