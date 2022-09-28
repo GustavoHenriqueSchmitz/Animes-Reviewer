@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { Anime } from './components/Anime';
+import { AnimeDescription } from './components/Description';
+import { AnimeEvaluation } from './components/Evaluation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div id="left-side">
+        <section id="section-description">
+          <AnimeDescription/>
+        </section>
+        <section id="section-evaluation">
+          <AnimeEvaluation/>
+        </section>
+      </div>
+      <div id="right-side">
+        <Anime/>
+      </div>
+    </>
   );
 }
 

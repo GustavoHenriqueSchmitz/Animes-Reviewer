@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#titleDescription {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+#description {
+    display: flex;
+    height: 80%;
+}
+

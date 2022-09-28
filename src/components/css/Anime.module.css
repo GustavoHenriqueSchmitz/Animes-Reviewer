@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+#animeImage {
+    height: 100%;
+    width: 45%;
+}
+
+#animeButton {
+    border-radius: 10px;
+    height: 25%;
+    width: 60%;
+}
