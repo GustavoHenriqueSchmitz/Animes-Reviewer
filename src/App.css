@@ -10,20 +10,20 @@
     flex-direction: row;
     height: 90%;
     width: 94%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
 }
 
 #left-side {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60% 40%;
-    padding: 0% 3%;
+    padding: 1% 3%;
     flex: 1;
 }
 
 #right-side {
     display: grid;
-    border: 1px solid black;
     place-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 15% 60% 25%;

@@ -4,11 +4,13 @@ function AnimeEvaluation() {
     return (
     <>
         <div id={style.note}>
-            <h1>7.5</h1>
+            <p>7.5</p>
         </div>
         <div id={style.evaluation}>
-            <label>Insira sua avaliação</label>
-            <input type="number" min="0" max="10" step="0.25"/>
+            <form action="">
+                <label>Insira sua avaliação</label>
+                <input type="number" min="0" max="10" step="0.25"/>
+            </form>
         </div>
     </>
     )
