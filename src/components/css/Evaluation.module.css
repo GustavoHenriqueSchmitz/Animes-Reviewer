@@ -1,29 +1,57 @@
 @charset "UTF-8";
 
-#note {
+#evaluationTitle {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
-}
-
-#note p {
-    font-size: calc(30px + 5vmin);
 }
 
 #evaluation {
-    display: grid;
-    grid-template-rows: 30% 70%;
-    place-items: center;
     height: 100%;
     width: 100%;
 }
 
-#evaluation input {
-    font-size: 45px;
+#evaluationNote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+}
+
+#evaluationNote p {
+    font-size: calc(30px + 5vmin);
+}
+
+#evaluationForm {
+    height: 40%;
+    width: 100%;
+}
+
+#evaluationForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+#evaluationForm input {
+    font-size: calc(15px + 1.8vmin);
     text-align: center;
     border-radius: 10px;
-    height: 70%;
-    width: 40%;
+    height: 60%;
+    width: 45%;
+}
+
+.texts {
+    font-size: calc(10px + 0.9vmin);
+}
+
+.titles {
+    font-size: calc(10px + 3vmin);
 }

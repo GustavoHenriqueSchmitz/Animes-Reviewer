@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #animeImage {
-    border: 3.5px solid rgb(255, 242, 0);
+    border: 3px solid rgb(255, 242, 0);
     border-radius: 10px;
     height: 100%;
     width: 45%;
@@ -9,8 +9,16 @@
 
 #animeButton {
     background-color: rgba(247, 162, 5, 0.863);
-    border: 3.5px solid rgb(255, 242, 0);
+    border: 3px solid rgb(255, 242, 0);
     border-radius: 10px;
     height: 25%;
     width: 60%;
+}
+
+.texts {
+    font-size: calc(10px + 0.9vmin);
+}
+
+.titles {
+    font-size: calc(10px + 3vmin);
 }
