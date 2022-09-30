@@ -33,7 +33,7 @@
 }
 
 #evaluationNote p {
-    font-size: calc(30px + 5vmin);
+    font-size: 7.5vmin;
 }
 
 #evaluationForm {
@@ -43,16 +43,14 @@
 
 #evaluationForm form {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     height: 100%;
     width: 100%;
 }
 
 #evaluationForm input {
-    font-size: calc(15px + 1.8vmin);
+    font-size: 4.5vmin;
     text-align: center;
     border-radius: 10px;
     height: 55%;
@@ -60,9 +58,9 @@
 }
 
 .texts {
-    font-size: calc(10px + 0.9vmin);
+    font-size: 2.1vmin;
 }
 
 .titles {
-    font-size: calc(10px + 3vmin);
+    font-size: 5vmin;
 }
