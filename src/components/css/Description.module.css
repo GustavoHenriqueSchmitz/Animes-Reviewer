@@ -15,10 +15,9 @@
 }
 
 .texts {
-    font-size: calc(10px + 0.9vmin);
+    font-size: calc(1px + 2.2vmin);
 }
 
 .titles {
     font-size: calc(10px + 3vmin);
 }
-
