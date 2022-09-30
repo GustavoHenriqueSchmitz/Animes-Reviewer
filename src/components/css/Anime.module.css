@@ -1,15 +1,16 @@
 @charset "UTF-8";
 
 #animeImage {
-    border: 3px solid rgb(255, 242, 0);
+    background: linear-gradient(90deg, rgba(219,153,13,1) 0%, rgba(223,213,24,1) 25%, rgba(250,177,10,1) 50%, rgba(242,214,5,1) 75%, rgba(215,129,11,1) 100%);
+    padding: 3px;
     border-radius: 10px;
     height: 100%;
     width: 45%;
 }
 
 #animeButton {
-    background-color: rgba(247, 162, 5, 0.863);
-    border: 3px solid rgb(255, 242, 0);
+    background: linear-gradient(90deg, rgba(219,153,13,1) 0%, rgba(223,213,24,1) 25%, rgba(250,177,10,1) 50%, rgba(242,214,5,1) 75%, rgba(215,129,11,1) 100%);
+    padding: 3px;
     border-radius: 10px;
     height: 25%;
     width: 60%;
