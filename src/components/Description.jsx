@@ -3,7 +3,7 @@ import style from './css/Description.module.css'
 function AnimeDescription() {
     return (
         <>
-            <div id={style.titleDescription}>
+            <div id={style.descriptionTitle}>
                 <h1 className={style.titles}>Description</h1>
             </div>
             <div id={style.description}>

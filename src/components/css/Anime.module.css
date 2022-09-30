@@ -1,12 +1,25 @@
 @charset "UTF-8";
 
 #animeImage {
+    background: linear-gradient(90deg, rgba(219,153,13,1) 0%, rgba(223,213,24,1) 25%, rgba(250,177,10,1) 50%, rgba(242,214,5,1) 75%, rgba(215,129,11,1) 100%);
+    padding: 3px;
+    border-radius: 10px;
     height: 100%;
     width: 45%;
 }
 
 #animeButton {
+    background: linear-gradient(90deg, rgba(219,153,13,1) 0%, rgba(223,213,24,1) 25%, rgba(250,177,10,1) 50%, rgba(242,214,5,1) 75%, rgba(215,129,11,1) 100%);
+    padding: 3px;
     border-radius: 10px;
     height: 25%;
     width: 60%;
+}
+
+.texts {
+    font-size: calc(10px + 0.9vmin);
+}
+
+.titles {
+    font-size: calc(10px + 3vmin);
 }

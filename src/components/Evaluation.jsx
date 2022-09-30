@@ -3,12 +3,21 @@ import style from './css/Evaluation.module.css'
 function AnimeEvaluation() {
     return (
     <>
-        <div id={style.note}>
-            <h1>7.5</h1>
-        </div>
         <div id={style.evaluation}>
-            <label>Insira sua avaliação</label>
-            <input type="number" min="0" max="10" step="0.25"/>
+            <div id={style.evaluationTitle}>
+                <h1 className={style.titles}>Avaliação</h1>
+            </div>
+            <div id={style.evaluationFormTitle}>
+                <h1 className={style.titles}>Avaliar Anime</h1>
+            </div>
+            <div id={style.evaluationNote}>
+                <p>7.5</p>
+            </div>
+            <div id={style.evaluationForm}>
+                <form action="">
+                    <input type="number" min="0" max="10" step="0.25" placeholder='0.00'/>
+                </form>
+            </div>
         </div>
     </>
     )

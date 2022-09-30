@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#titleDescription {
+#descriptionTitle {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,6 +9,16 @@
 
 #description {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 80%;
+}
+
+.texts {
+    font-size: calc(10px + 0.9vmin);
+}
+
+.titles {
+    font-size: calc(10px + 3vmin);
 }
 

@@ -8,22 +8,22 @@
 #base-div {
     display: flex;
     flex-direction: row;
-    height: 90%;
-    width: 94%;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-#left-side {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60% 40%;
-    padding: 0% 3%;
-    flex: 1;
+    height: 96%;
+    width: 96%;
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: 20px;
 }
 
 #right-side {
     display: grid;
-    border: 1px solid black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    padding: 1% 3%;
+    flex: 1;
+}
+
+#left-side {
+    display: grid;
     place-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 15% 60% 25%;
@@ -35,8 +35,5 @@
 }
 
 #section-evaluation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
     height: 100%;
 }
