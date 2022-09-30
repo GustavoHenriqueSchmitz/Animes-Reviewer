@@ -4,7 +4,7 @@ function RenderizeAnimeImage() {
     const url = `https://kitsu.io/api/edge/anime/${animeId}`
 
     // GET request using fetch with error handling
-    const image = fetch(url)
+    fetch(url)
         .then(async response => {
             const data = await response.json();
 
