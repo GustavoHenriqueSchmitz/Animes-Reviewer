@@ -1,19 +1,5 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-#base-div {
-    display: flex;
-    flex-direction: row;
-    height: 96%;
-    width: 96%;
-    background-color: rgba(240, 240, 240, 1);
-    border-radius: 2.2%;
-}
-
 #right-side {
     display: grid;
     grid-template-columns: 1fr;
@@ -36,4 +22,32 @@
 
 #section-evaluation {
     height: 100%;
+}
+
+@media(max-width: 1000px) {
+
+    #anime {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 65% 20%;
+        width: 100%;
+        height: 50%;
+    }
+
+    #description {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 70%;
+        height: 25%;
+        padding: 0 10%;
+    }
+
+    #evaluation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30% 70%;
+        height: 25%;
+    }
 }

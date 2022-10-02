@@ -64,3 +64,40 @@
 .titles {
     font-size: 5vmin;
 }
+
+@media(max-width: 1220px) {
+
+    #evaluationNote p {
+        font-size: 7vmin;
+    }
+
+    #evaluationForm input {
+        font-size: 4.1vmin;
+    }
+
+    .titles {
+        font-size: 4.1vmin;
+    }
+}
+
+@media(max-width: 1000px) {
+    #evaluationTitle {
+        align-items: flex-end;
+    }
+
+    #evaluationForm input {
+        font-size: 4.5vmin;
+        text-align: center;
+        border-radius: 10px;
+        height: 45%;
+        width: 45%;
+    }
+
+    #evaluationFormTitle {
+        align-items: flex-end;
+    }
+
+    .titles {
+        font-size: 5vmin;
+    }
+}

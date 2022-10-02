@@ -21,3 +21,19 @@
 .titles {
     font-size: 5vmin;
 }
+
+@media(max-width: 1220px) {
+    .titles {
+        font-size: 4.1vmin;
+    }
+
+    .texts {
+        font-size: 1.95vmin;
+    }
+}
+
+@media(max-width: 1000px) {
+    .titles {
+        font-size: 5vmin;
+    }   
+}

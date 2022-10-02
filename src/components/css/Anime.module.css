@@ -22,3 +22,24 @@
 .titles {
     font-size: 5vmin;
 }
+
+@media(max-width: 1220px) {
+
+    #animeImage {
+        width: 54%;
+    }
+
+    .titles {
+        font-size: 4.1vmin;
+    }
+}
+
+@media(max-width: 1000px) {
+    #animeImage {
+        width: 40%;
+    }
+
+    .titles {
+        font-size: 5vmin;
+    }
+}
