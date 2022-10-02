@@ -20,11 +20,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 #baseDiv {
   display: flex;
   flex-direction: row;
@@ -43,7 +38,7 @@ code {
 
 @media(max-width: 1000px) {
   body {
-    height: 1200px;
+    height: 1300px;
   }
 
   #baseDiv {

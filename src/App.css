@@ -70,3 +70,14 @@
         grid-template-rows: 10% 90%;
     }
 }
+
+/*For horizontal devices*/
+@media(max-width: 1000px) and (max-height: 500px) and (min-width: 320px) {
+    #anime {
+        height: 50%;
+    }
+
+    #description {
+        height: 33%;
+    }
+}
