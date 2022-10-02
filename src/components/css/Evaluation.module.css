@@ -55,6 +55,7 @@
     border-radius: 10px;
     height: 55%;
     width: 45%;
+    min-width: 70px;
 }
 
 .texts {
@@ -65,8 +66,8 @@
     font-size: 5vmin;
 }
 
+/*For vertical devices*/
 @media(max-width: 1220px) {
-
     #evaluationNote p {
         font-size: 7vmin;
     }
@@ -98,6 +99,34 @@
     }
 
     .titles {
-        font-size: 5vmin;
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 530px) {
+    .titles {
+        font-size: 25px;
+    }
+
+    #evaluationForm input {
+        font-size: 20px;
+    }
+
+    #evaluationNote p {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 355px) {
+    .titles {
+        font-size: 15px;
+    }
+
+    #evaluationForm input {
+        font-size: 18px;
+    }
+
+    #evaluationNote p {
+        font-size: 25px;
     }
 }

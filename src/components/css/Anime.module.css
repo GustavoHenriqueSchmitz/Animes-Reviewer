@@ -6,6 +6,8 @@
     border-radius: 4vmin;
     height: 100%;
     width: 45%;
+    min-width: 140px;
+    min-height: 200px;
 }
 
 #animeButton {
@@ -13,6 +15,8 @@
     border-radius: 2vmin;
     height: 25%;
     width: 60%;
+    min-height: 30px;
+    min-width: 170px;
 }
 
 .texts {
@@ -23,8 +27,8 @@
     font-size: 5vmin;
 }
 
+/*For vertical devices*/
 @media(max-width: 1220px) {
-
     #animeImage {
         width: 54%;
     }
@@ -36,10 +40,41 @@
 
 @media(max-width: 1000px) {
     #animeImage {
-        width: 40%;
+        width: 37%;
+    }
+
+    #animeButton {
+        height: 35%;
     }
 
     .titles {
-        font-size: 5vmin;
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 530px) {
+    #animeImage {
+        height: 90%;
+        width: 43%;
+    }
+
+    
+    .titles {
+        font-size: 25px;
+    }
+
+    .texts {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 355px) {
+
+    .titles {
+        font-size: 15px;
+    }
+
+    .texts {
+        font-size: 12px;
     }
 }

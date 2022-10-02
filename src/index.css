@@ -25,7 +25,7 @@ code {
     monospace;
 }
 
-#base-div {
+#baseDiv {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -34,6 +34,7 @@ code {
   border-radius: 2.2%;
 }
 
+/*For vertical devices*/
 @media(min-width: 1000px) {
   body {
     height: 100vh;
@@ -45,7 +46,19 @@ code {
     height: 1200px;
   }
 
-  #base-div {
+  #baseDiv {
     flex-direction: column;
+  }
+}
+
+@media(max-width: 530px) {
+  body {
+    height: 950px;
+  }
+}
+
+@media(max-width: 355px) {
+  body {
+    height: 700px;
   }
 }
