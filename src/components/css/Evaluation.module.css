@@ -33,7 +33,7 @@
 }
 
 #evaluationNote p {
-    font-size: calc(30px + 5vmin);
+    font-size: 7.5vmin;
 }
 
 #evaluationForm {
@@ -43,26 +43,101 @@
 
 #evaluationForm form {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     height: 100%;
     width: 100%;
 }
 
 #evaluationForm input {
-    font-size: calc(15px + 1.8vmin);
+    font-size: 4.5vmin;
     text-align: center;
     border-radius: 10px;
     height: 55%;
     width: 45%;
+    min-width: 70px;
 }
 
 .texts {
-    font-size: calc(10px + 0.9vmin);
+    font-size: 2.1vmin;
 }
 
 .titles {
-    font-size: calc(10px + 3vmin);
+    font-size: 5vmin;
+}
+
+/*For vertical devices*/
+@media(max-width: 1280px) {
+    #evaluationNote p {
+        font-size: 7vmin;
+    }
+
+    #evaluationForm input {
+        font-size: 4.1vmin;
+    }
+
+    .titles {
+        font-size: 4.1vmin;
+    }
+}
+
+@media(max-width: 1000px) {
+    #evaluationTitle {
+        align-items: flex-end;
+    }
+
+    #evaluationForm input {
+        font-size: 4.5vmin;
+        text-align: center;
+        border-radius: 10px;
+        height: 45%;
+        width: 45%;
+    }
+
+    #evaluationFormTitle {
+        align-items: flex-end;
+    }
+
+    .titles {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 530px) {
+    .titles {
+        font-size: 25px;
+    }
+
+    #evaluationForm input {
+        font-size: 20px;
+    }
+
+    #evaluationNote p {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 355px) {
+    .titles {
+        font-size: 15px;
+    }
+
+    #evaluationForm input {
+        font-size: 18px;
+    }
+
+    #evaluationNote p {
+        font-size: 25px;
+    }
+}
+
+/*For horizontal devices*/
+@media(max-width: 1000px) and (max-height: 500px) and (min-width: 500px){
+    #evaluationNote p {
+        font-size: 45px;
+    }
+
+    #evaluationForm input {
+        font-size: 30px;
+    }
 }
