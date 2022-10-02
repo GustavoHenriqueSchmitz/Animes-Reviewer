@@ -1,25 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import { Anime } from './components/Anime';
+import { AnimeDescription } from './components/Description';
+import { AnimeEvaluation } from './components/Evaluation';
+import { GetWindowSize } from './components/js/render';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const isDesktop = GetWindowSize()
+
+  return   (
+    <>
+      {isDesktop ? (
+        <>
+          <div id="left-side">
+            <Anime/>
+          </div>
+          <div id="right-side">
+            <section id="section-description">
+              <AnimeDescription/>
+            </section>
+            <section id="section-evaluation">
+              <AnimeEvaluation/>
+            </section>
+          </div>
+        </>
+      ) : (
+        <>
+          <section id="anime">
+            <Anime/>
+          </section>
+          <section id="description">
+            <AnimeDescription/>
+          </section>
+          <section id="evaluation">
+            <AnimeEvaluation/>
+          </section>
+        </>
+      )}
+    </>
+  )
 }
 
 export default App;
