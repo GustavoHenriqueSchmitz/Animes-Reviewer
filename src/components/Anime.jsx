@@ -1,16 +1,8 @@
 import style from './css/Anime.module.css'
-import { useReducer } from 'react'
-import { RenderizeAnimeImage } from './js/api'
 import { name, image } from './js/api'
+import { renderInformations } from '../App'
 
 function Anime() {
-
-    const [ignored, forceUpdate] = useReducer(x => x + 1, 0)
-
-    async function renderInformations() {
-        await RenderizeAnimeImage()
-        forceUpdate()
-    }
 
     return (
         <>
