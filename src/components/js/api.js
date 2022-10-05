@@ -12,9 +12,14 @@ async function RenderizeInformations() {
         const response = await fetch(url)
 
         if (response.status === 200) {
-            console.log(animeId)
             const data = await response.json()
             name = data.data.attributes.canonicalTitle
+
+            if (name.length > 35) {
+                name = data.data.attributes.abbreviatedTitles[0]
+            }
+
+            //name = data.data.attributes.abbreviatedTitles[0]
             image = data.data.attributes.posterImage.original
             description = data.data.attributes.description
             break

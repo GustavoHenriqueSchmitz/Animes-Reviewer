@@ -28,7 +28,7 @@
 }
 
 .titles {
-    font-size: 4.5vmin;
+    font-size: 4.7vmin;
 }
 
 /*For vertical devices*/
@@ -38,7 +38,7 @@
     }
 
     .titles {
-        font-size: 3.9vmin;
+        font-size: 4.1vmin;
     }
 }
 
@@ -52,7 +52,7 @@
     }
 
     .titles {
-        font-size: 28px;
+        font-size: 32px;
     }
 }
 
@@ -63,7 +63,7 @@
     }
 
     .titles {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .texts {
@@ -74,7 +74,7 @@
 @media(max-width: 355px) {
 
     .titles {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .texts {
