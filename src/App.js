@@ -12,7 +12,7 @@ let renderInformations
 function App() {
 
   const isDesktop = GetWindowSize() // Function getWindowSize, get the window size.
-  const [ignored, forceUpdate] = useReducer(x => x + 1, 0) // useReducer value, to force a refresh.
+  const [, forceUpdate] = useReducer(x => x + 1, 0) // useReducer value, to force a refresh.
 
   // Variable renderInformation get the renderInformation function, renderize the anime information.
   renderInformations = async function renderInformations() {
