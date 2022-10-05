@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 function GetWindowSize() {
-// useStates variables
+  // useStates variables
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1000)
 
   // Check the window size for the rendering
