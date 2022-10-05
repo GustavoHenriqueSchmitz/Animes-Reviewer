@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+#animeName {
+    text-align: center;
+}
+
 #animeImage {
     background: linear-gradient(90deg, rgba(219,153,13,1) 0%, rgba(223,213,24,1) 25%, rgba(250,177,10,1) 50%, rgba(242,214,5,1) 75%, rgba(215,129,11,1) 100%);
     padding: 0.5%;
@@ -24,17 +28,17 @@
 }
 
 .titles {
-    font-size: 5vmin;
+    font-size: 4.5vmin;
 }
 
 /*For vertical devices*/
-@media(max-width: 1280px) {
+@media(max-width: 1220px) {
     #animeImage {
         width: 54%;
     }
 
     .titles {
-        font-size: 4.1vmin;
+        font-size: 3.9vmin;
     }
 }
 
@@ -48,7 +52,7 @@
     }
 
     .titles {
-        font-size: 35px;
+        font-size: 28px;
     }
 }
 
@@ -59,7 +63,7 @@
     }
 
     .titles {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .texts {
@@ -70,7 +74,7 @@
 @media(max-width: 355px) {
 
     .titles {
-        font-size: 15px;
+        font-size: 11px;
     }
 
     .texts {

@@ -4,7 +4,7 @@ import { AnimeDescription } from './components/Description';
 import { AnimeEvaluation } from './components/Evaluation';
 import { GetWindowSize } from './components/js/render';
 import { useReducer } from 'react'
-import { RenderizeAnimeImage } from './components/js/api'
+import { RenderizeInformations } from './components/js/api'
 
 let renderInformations
 
@@ -14,7 +14,7 @@ function App() {
   const [ignored, forceUpdate] = useReducer(x => x + 1, 0)
 
   renderInformations = async function renderInformations() {
-      await RenderizeAnimeImage()
+      await RenderizeInformations()
       forceUpdate()
   }
 
