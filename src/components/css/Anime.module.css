@@ -1,22 +1,44 @@
 @charset "UTF-8";
 
+#animeName {
+    text-align: center;
+}
+
 #animeImage {
-    background: linear-gradient(90deg, rgba(219,153,13,1) 0%, rgba(223,213,24,1) 25%, rgba(250,177,10,1) 50%, rgba(242,214,5,1) 75%, rgba(215,129,11,1) 100%);
+    background:rgb(0, 0, 0);;
     padding: 0.5%;
-    border-radius: 4vmin;
-    height: 100%;
+    border-radius: 2vmin;
+    height: 98%;
     width: 45%;
     min-width: 140px;
-    min-height: 200px;
+    min-height: 190px;
+    transition: 0.3s;
+}
+
+#animeImage:hover {
+    background: linear-gradient(90deg, rgba(219,153,13,1) 0%, rgba(223,213,24,1) 25%, rgba(250,177,10,1) 50%, rgba(242,214,5,1) 75%, rgba(215,129,11,1) 100%);
 }
 
 #animeButton {
-    background: linear-gradient(90deg, rgba(219,153,13,1) 0%, rgba(223,213,24,1) 25%, rgba(250,177,10,1) 50%, rgba(242,214,5,1) 75%, rgba(215,129,11,1) 100%);
+    background-color: rgb(40, 40, 40);
+    color: white;
+    cursor: pointer;
     border-radius: 2vmin;
     height: 25%;
     width: 60%;
     min-height: 30px;
     min-width: 170px;
+    transition: 0.3s;
+}
+
+#animeButton:hover {
+    color: black;
+    background: linear-gradient(90deg, rgba(219,153,13,1) 0%, rgba(223,213,24,1) 25%, rgba(250,177,10,1) 50%, rgba(242,214,5,1) 75%, rgba(215,129,11,1) 100%);
+}
+
+#animeButton:active {
+    color: black;
+    background: linear-gradient(90deg, rgba(219,153,13,1) 0%, rgba(223,213,24,1) 25%, rgba(250,177,10,1) 50%, rgba(242,214,5,1) 75%, rgba(215,129,11,1) 100%);
 }
 
 .texts {
@@ -24,11 +46,11 @@
 }
 
 .titles {
-    font-size: 5vmin;
+    font-size: 4.5vmin;
 }
 
 /*For vertical devices*/
-@media(max-width: 1280px) {
+@media(max-width: 1220px) {
     #animeImage {
         width: 54%;
     }
@@ -48,7 +70,7 @@
     }
 
     .titles {
-        font-size: 35px;
+        font-size: 32px;
     }
 }
 
@@ -59,7 +81,7 @@
     }
 
     .titles {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .texts {
@@ -70,7 +92,7 @@
 @media(max-width: 355px) {
 
     .titles {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .texts {
