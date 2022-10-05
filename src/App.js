@@ -18,7 +18,7 @@ function App() {
       forceUpdate()
   }
 
-  return   (
+  return (
     <>
       {isDesktop ? (
         <>

@@ -15,7 +15,7 @@ async function RenderizeInformations() {
             const data = await response.json()
             name = data.data.attributes.canonicalTitle
 
-            if (name.length > 35) {
+            if (name.length > 40) {
                 name = data.data.attributes.abbreviatedTitles[0]
             }
 
