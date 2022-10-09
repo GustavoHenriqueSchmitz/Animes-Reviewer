@@ -7,7 +7,7 @@ function Anime() {
     return (
         <>
             <h1 className={style.titles} id={style.animeName}>{name}</h1>
-            <img id={style.animeImage} src={image} alt="Image illustrating the anime or manga"/>
+            <img id={style.animeImage} src={image} alt="Illustrating the anime or manga"/>
             <button id={style.animeButton} onClick={renderInformations}><p className={style.texts}>Next Anime</p></button>
         </>
     )
