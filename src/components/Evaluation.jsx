@@ -10,10 +10,10 @@ function AnimeEvaluation() {
        {isDesktop ? (
             <div id={style.evaluation}>
                 <div id={style.evaluationTitle}>
-                    <h1 className={style.titles}>Avaliação</h1>
+                    <h1 className={style.titles}>Evaluation</h1>
                 </div>
                 <div id={style.evaluationFormTitle}>
-                    <h1 className={style.titles}>Avaliar Anime</h1>
+                    <h1 className={style.titles}>Rate Anime</h1>
                 </div>
                 <div id={style.evaluationNote}>
                     <p>7.5</p>
@@ -27,10 +27,10 @@ function AnimeEvaluation() {
         ) : (
         <>
             <div id={style.evaluationTitle}>
-                <h1 className={style.titles}>Avaliação</h1>
+                <h1 className={style.titles}>Evaluation</h1>
             </div>
             <div id={style.evaluationFormTitle}>
-                <h1 className={style.titles}>Avaliar Anime</h1>
+                <h1 className={style.titles}>Rate Anime</h1>
             </div>
             <div id={style.evaluationNote}>
                 <p>7.5</p>

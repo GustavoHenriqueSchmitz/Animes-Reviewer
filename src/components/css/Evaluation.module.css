@@ -52,7 +52,7 @@
 #evaluationForm input {
     font-size: 4.5vmin;
     text-align: center;
-    border-radius: 1vmin;
+    border-radius: 2vmin;
     height: 55%;
     width: 45%;
     min-width: 70px;
@@ -61,7 +61,7 @@
 }
 
 #evaluationForm input:focus {
-    border: 0.5vmin solid rgb(255, 200, 0);
+    border: 0.6vmin solid rgb(255, 200, 0);
 }
 
 .texts {
