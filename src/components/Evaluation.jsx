@@ -1,5 +1,5 @@
 import style from './css/Evaluation.module.css';
-import { evaluation, SendEvaluate } from './js/api';
+import { evaluation } from './js/api';
 import { GetWindowSize } from './js/render';
 import { useReducer } from 'react';
 import { SendEvaluation } from './js/api'
@@ -30,7 +30,7 @@ function AnimeEvaluation() {
                 </div>
                 <div id={style.evaluationForm}>
                     <form onSubmit={SendEvaluation} method="post" action="http://localhost:5000/api/evaluate">
-                        <input name="evaluation" type="number" min="0" max="10" step="0.25" placeholder='0.00'/>
+                        <input name="evaluation" type="number" min="0" max="10" step="0.1" placeholder='0.00'/>
                     </form>
                 </div>
             </div>
