@@ -1,9 +1,19 @@
 import style from './css/Evaluation.module.css';
-import { GetWindowSize } from './js/render'
+import { evaluation, SendEvaluate } from './js/api';
+import { GetWindowSize } from './js/render';
+import { useReducer } from 'react';
+import { SendEvaluation } from './js/api'
+
+let updateEvaluationComponent
 
 function AnimeEvaluation() {
 
     const isDesktop = GetWindowSize()
+    const [, forceUpdate] = useReducer(x => x + 1, 0) // useReducer value, to force a refresh.
+
+    updateEvaluationComponent =  function updateEvaluationComponent() {
+        forceUpdate()
+    }
 
     return (
     <>
@@ -16,11 +26,11 @@ function AnimeEvaluation() {
                     <h1 className={style.titles}>Rate Anime</h1>
                 </div>
                 <div id={style.evaluationNote}>
-                    <p>7.5</p>
+                    <p>{evaluation}</p>
                 </div>
                 <div id={style.evaluationForm}>
-                    <form action="">
-                        <input type="number" min="0" max="10" step="0.25" placeholder='0.00'/>
+                    <form onSubmit={SendEvaluation} method="post" action="http://localhost:5000/api/evaluate">
+                        <input name="evaluation" type="number" min="0" max="10" step="0.25" placeholder='0.00'/>
                     </form>
                 </div>
             </div>
@@ -33,11 +43,11 @@ function AnimeEvaluation() {
                 <h1 className={style.titles}>Rate Anime</h1>
             </div>
             <div id={style.evaluationNote}>
-                <p>7.5</p>
+                <p>{evaluation}</p>
             </div>
             <div id={style.evaluationForm}>
-                <form action="">
-                    <input type="number" min="0" max="10" step="0.25" placeholder='0.00'/>
+                <form onSubmit={SendEvaluation} method="post" action="http://localhost:5000/api/evaluate">
+                    <input name="evaluation" type="number" min="0" max="10" step="0.25" placeholder='0.00'/>
                 </form>
             </div>
         </>
@@ -46,4 +56,4 @@ function AnimeEvaluation() {
     )
 }
 
-export { AnimeEvaluation }
+export { AnimeEvaluation, updateEvaluationComponent }

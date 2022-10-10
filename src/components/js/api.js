@@ -1,34 +1,27 @@
-// It generates the variables that will contain the information of the selected anime.
-// Assigning their default values.
-let name = 'Cowboy Bebop'
-let image = 'https://media.kitsu.io/anime/poster_images/1/original.jpg'
+import { updateEvaluationComponent } from "../Evaluation"
 
-let description = `In the year 2071, humanity has colonized several of the planets and
-moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The 
-Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty 
-hunters, referred to as 'Cowboys'. The ragtag team aboard the spaceship Bebop are two such 
-individuals.Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner
-Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course
-by the addition of new members that they meet in their travels—Ein, a genetically engineered,
-highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory
-loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that
-unravel each member's dark and mysterious past little by little. Well-balanced with high density
-action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the
-smooth and improvised music it is named after.`
+// Initialize anime
+let animeId = 0
+
+// Initialize informations
+let name = ""
+let image = ""
+let description = ""
+let evaluation = 0
 
 // Function RenderizeInformations, Get the information from the anime api.
 async function RenderizeInformations() {
 
     while (true) {
-        const animeId = Math.floor(Math.random() * (5000 - 1) + 1)
+        animeId = Math.floor(Math.random() * (5000 - 1) + 1)
         const url = `https://kitsu.io/api/edge/anime/${animeId}`
     
-        // GET request using fetch with error handling
-        const response = await fetch(url)
+        // Sends a request to the anime API, to get the anime information
+        let response = await fetch(url)
 
         // If the response is not 200 OK, try again by restarting the loop and making a new request.
         if (response.status === 200) {
-            const data = await response.json()
+            let data = await response.json()
             name = data.data.attributes.canonicalTitle
 
             // If the name of the anime is too long, take the abbreviated one
@@ -38,10 +31,38 @@ async function RenderizeInformations() {
 
             image = data.data.attributes.posterImage.original
             description = data.data.attributes.description
+            await RenderizeEvaluation()
             break
         }
         continue
     }
 }
 
-export { RenderizeInformations, name, image, description}
+async function RenderizeEvaluation() {
+    const response = await fetch(`http://localhost:5000/api/evaluation/${animeId}`)
+    const data = await response.json()
+    evaluation = data.data.evaluation
+}
+
+async function SendEvaluation(event) {
+
+    event.preventDefault()
+    let form = event.currentTarget;
+    let url = form.action;
+
+    let formData = new FormData(form);
+    let formDataObject = Object.fromEntries(formData.entries());
+    let formDataJsonString = JSON.stringify({anime_id: animeId, anime_name: name, evaluation: Number(formDataObject.evaluation)});  // Set the fetch options (headers, body)
+    
+    await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: formDataJsonString,
+    })
+    await RenderizeEvaluation()
+    updateEvaluationComponent()
+}
+
+export { RenderizeInformations, SendEvaluation, name, image, description, evaluation }

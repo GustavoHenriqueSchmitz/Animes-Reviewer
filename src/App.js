@@ -3,11 +3,12 @@ import { Anime } from './components/Anime';
 import { AnimeDescription } from './components/Description';
 import { AnimeEvaluation } from './components/Evaluation';
 import { GetWindowSize } from './components/js/render';
-import { useReducer } from 'react'
-import { RenderizeInformations } from './components/js/api'
+import { useReducer } from 'react';
+import { RenderizeInformations } from './components/js/api';
 
 // Variable to export the function renderInformations
 let renderInformations
+let initiated = 0
 
 function App() {
 
@@ -15,9 +16,14 @@ function App() {
   const [, forceUpdate] = useReducer(x => x + 1, 0) // useReducer value, to force a refresh.
 
   // Variable renderInformation get the renderInformation function, renderize the anime information.
-  renderInformations = async function renderInformations() {
+  renderInformations = async ()=> {
       await RenderizeInformations()
       forceUpdate()
+  }
+
+  if (initiated < 2) {
+    initiated += 1
+    renderInformations()
   }
 
   return (
