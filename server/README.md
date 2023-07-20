@@ -1,6 +1,4 @@
-# Animes Back-end
-
-Back-end do projeto **Animes-FrontEnd**.
+# Back-end
 
 Este é um projeto de um site de animes.
 Onde você pode visualizar um catálogo
