@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model evaluation {
+  id         Int     @id
+  anime      String  @unique(map: "anime") @db.VarChar(60)
+  evaluation Decimal @default(0.00) @db.Decimal(4, 2)
+  summed     Decimal @default(0.00) @db.Decimal(65, 2)
+  quantity   Int     @default(0)
+}
