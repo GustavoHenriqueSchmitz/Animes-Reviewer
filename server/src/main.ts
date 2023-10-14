@@ -1,9 +1,9 @@
-import { PrismaClient } from "@prisma/client";
-import express from "express";
-import { Express } from "express";
-import { Router } from "express";
-import initRoutes from "./routes/routes";
-import cors from "cors";
+import { PrismaClient } from '@prisma/client';
+import cors from 'cors';
+import express from 'express';
+import { Express } from 'express';
+import { Router } from 'express';
+import initRoutes from './routes/routes';
 
 const server: {
   app: Express;
@@ -31,11 +31,11 @@ async function initServer() {
 
   // Define the application routes
   initRoutes();
-  server.app.use("/api", server.router);
+  server.app.use('/api', server.router);
 
   // Starting server
   server.app.listen(5000, () => {
-    console.log("Servidor inicializado na porta 5000");
+    console.log('Servidor inicializado na porta 5000');
   });
 }
 initServer();

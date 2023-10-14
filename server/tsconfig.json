@@ -1,11 +1,9 @@
 {
-  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "sourceMap": true,
     "strict": true,
     "lib": ["esnext"],
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "rootDir": ".",
     "outDir": "dist",
     "declaration": true,
@@ -18,7 +16,7 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "noImplicitReturns": false
+    "noImplicitReturns": false,
   },
   "include": [
     "src/**/*.ts",
