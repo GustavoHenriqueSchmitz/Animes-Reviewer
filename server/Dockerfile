@@ -11,7 +11,6 @@ COPY . .
 RUN npm install
 RUN cd src
 RUN npx prisma generate
-RUN cd ..
 
 # Expose the port your TypeScript server will listen on
 EXPOSE 5000
