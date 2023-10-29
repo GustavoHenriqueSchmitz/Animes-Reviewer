@@ -1,15 +1,14 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: nginx-replicaset
+  name: nginx-deployment
 spec:
   selector:
     matchLabels:
       app: nginx
-  replicas: 10
+  replicas: 3
   template:
     metadata:
-      name: nginx
       labels:
         app: nginx
     spec:

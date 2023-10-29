@@ -1,4 +1,3 @@
-# Arquivo Kubernetes
 apiVersion: v1
 kind: Pod
 metadata:
@@ -9,9 +8,5 @@ spec:
   containers:
   - name: nginx
     image: nginx:latest
-    resources:
-      limits:
-        memory: "1000Mi"
-        cpu: "1000m"
     ports:
     - containerPort: 80
