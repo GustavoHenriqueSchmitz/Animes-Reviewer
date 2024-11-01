@@ -9,7 +9,7 @@
   },  
   "scripts": {
     "build": "npx tsc",
-    "start": "node dist/main.js",
+    "start": "node dist/src/main.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
   },
   "type": "commonjs",

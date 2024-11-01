@@ -4,7 +4,7 @@
     "strict": true,
     "lib": ["esnext"],
     "esModuleInterop": true,
-    "rootDir": "src",
+    "rootDir": ".",
     "outDir": "dist",
     "declaration": true,
     "removeComments": true,
