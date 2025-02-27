@@ -3,6 +3,9 @@
 ## About the project
 A website of animes evaluation, made using the [Kitsu](https://kitsu.io) API. With a client made in React and server in Node.js. 
 
+## Project demonstration video
+[![Anime API Demo](https://img.youtube.com/vi/grnNSNoWz-4/0.jpg)](https://www.youtube.com/watch?v=grnNSNoWz-4)
+
 ## Used technologies
 - React
 - TypeScript
