@@ -5,6 +5,7 @@ import { AnimeEvaluation } from './components/Evaluation';
 import { GetWindowSize } from './components/js/render';
 import { useReducer } from 'react';
 import { RenderizeInformations } from './components/js/api';
+import { Analytics } from "@vercel/analytics/react"
 
 // Variable to export the function renderInformations
 let renderInformations
@@ -56,6 +57,7 @@ function App() {
           </section>
         </>
       )}
+      <Analytics/>
     </>
   )
 }
